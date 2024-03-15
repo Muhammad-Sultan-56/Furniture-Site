@@ -1,4 +1,131 @@
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+/*================ navbar start=============== */
+nav{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: rgb(194, 43, 114);
+}
+
+
+nav .links ul{
+display: flex;
+gap: 35px;
+}
+nav .links ul li{
+    list-style: none;
+}
+
+nav .links ul li a{
+text-decoration: none;
+color: rgb(194, 43, 114);
+font-size: 1.2rem;
+}
+
+nav .s-icons{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+}
+/*============ navbar end ==================*/
+
+.circle{
+    height: 300px;
+    width: 300px;
+    background-color: lightgray;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/*============= left div of the content in header=============== */
+.left{
+    flex-basis: 60%;
+    max-width: 500px;
+}
+.left h1{
+    font-size: 3rem;
+}
+.left span{
+    color: rgb(194, 43, 114);
+}
+.left p{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+/*=========== input and button design ============ */
+.order input{
+    margin: 10px 0px;
+    padding: 8px;
+    width: 73%;
+    outline: none;
+    font-size: 1.1rem;
+    border: 1px solid rgb(194, 43, 114);
+}
+
+.order button{
+    padding: 9px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    background-color: rgb(194, 43, 114);
+}
+
+/* counter design */
+.counter{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter h1{
+    font-size: 1.9rem;
+    color: rgb(194, 43, 114);
+}
+
+.counter img{
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    width: 100px;
+
+}
+
+/*============ right div of the content in header ==============*/
+
+.right{
+  flex-basis: 40%;
+    z-index: 10;
+    text-align: right;
 }
